@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="custom.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>CS 1300 - Iterative Design - Partiful 3</title>
+    <style>
+      .custom-frame {
+        width: 1194px;
+        height: 602px;
+        background-color: #252525;
+        border-radius: 0 0 20px 20px;
+        overflow: hidden;
+      }
+      @media print {
+        @page {
+          size: landscape;
+        }
+      }
+
+    </style>
+  </head>
+
+  <body class="bg-[#efefec]">
+    <div class="container">
+      <div class="w-full space-y-12 p-0">
+
+        <!-- Image container styled -->
+        <div class="custom-frame mx-auto flex flex-col md:flex-row items-end justify-center gap-4 p-6 w-[80%]">
+          <img
+            src="potluck.png"
+            alt="iphone mockup 1"
+            class="max-h-[500px] object-contain"
+          />
+          <img
+            src="potluck1.png"
+            alt="iphone mockup 2"
+            class="max-h-[500px] object-contain"
+          />
+        </div>
+        
+        <h1 class="text-4xl font-semibold text-center">Partiful Potluck Feature</h1>
+  
+        <!-- Role/Team/Timeline/Tools/URL -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-[90%] max-w-screen-xl mx-auto">
+          <div>
+            <h2 class="text-xl underline mb-1">ROLE</h2>
+            <p class="text-lg">UI Design, User Research</p>
+          </div>
+          <div>
+            <h2 class="text-xl underline mb-1">TEAM</h2>
+            <p class="text-lg">Team of four</p>
+            <p class="text-lg">Teammates: Yemisi Gbenebor, Wangdrak Dorji, and Kseniia Dolgopolova</p>
+          </div>
+          <div>
+            <h2 class="text-xl underline mb-1">TIMELINE</h2>
+            <p class="text-lg">3 Weeks</p>
+          </div>
+          <div>
+            <h2 class="text-xl underline mb-1">TOOLS</h2>
+            <p class="text-lg">Figma, Balsamiq, HTML, CSS</p>
+          </div>
+        </div>
+  
+        <!-- Problem/Solution -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 w-[90%] max-w-screen-xl mx-auto">
+          <div>
+            <h3 class="text-2xl font-semibold mb-2">PROBLEM</h3>
+            <p>
+              The app is popular among young working adults but lacks visibility among college students. The challenge is identifying a feature with strong virality potential on college campuses. Our goal is to increase adoption of the app among college students.           
+              College students frequently host events, especially parties, and represent a large, untapped user base
+            </p>
+            </div>
+          <div>
+            <h3 class="text-2xl font-semibold mb-2">SOLUTION</h3>
+            <p>
+              Introduce a potluck feature that allows event guests to contribute items and resources for events. Student-organized events typically have limited budgets and often rely on contributions from attendees. This functionality is not offered by major competitors like Eventbrite or Google Calendar.
+            </p>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="container pt-8">
+      <h2 class="text-2xl">01 Sketching</h2>
+      <p>Our first step of the iterative design process was to create sketches and wireframe to develop a low-fi prototype to center our design ideas.</p>
+      <h3 class="text-2xl">My Sketches</h3>
+      <div class="flex justify-center gap-4 mt-2">
+        <img src="sketch1.png" alt="Initial sketch 1" width="40%">
+        <img src="sketch2.png" alt="Initial sketch 2" width="40%">
+      </div>
+      <br>
+
+      <div class="row d-felx d-flex pt-4">
+        <div class="col-md-6">
+          <h4 class="text-2xl">Key Ideas from my Sketch</h4>
+          <ul>
+            <li>Entry point from the event page.</li>
+            <li>Guests can claim items to bring.</li>
+            <li>Guests can view who’s bringing what for the potluck.</li>
+            <li>Hosts can list what each guest will need for themselves in order to participate. (e.g., all guests need swimwear for beach event)</li>
+          </ul>
+        </div>
+
+        <div class="col-md-6">
+          <h4 class="text-2xl">Other Ideas from Teammates</h4>
+          <ul>
+            <li>Host can assign items to guests</li>
+            <li>Guests can request help for items.</li>
+            <li>Gamification feature to allow guests "level up" after attending many events.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="text-2xl pt-12">02 Wireframing</h2>
+      <p>After we reviewed each teammates sketches, we combined our ideas into a wireframe.</p>
+      <div class="row d-felx d-flex pt-4">
+        <div class="col-md-6">
+          <h4 class="text-2xl">What's Incorporated From the Sketches</h4>
+          <ul>
+            <li>Potluck toggle and item list added to the event page.</li>
+            <li>Guests can claim items and host can assign items.</li>
+            <li>Clear visual display of who is bringing each item.</li>
+            <li>Shared requirements field included.</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h4 class="text-2xl">New Additions During Wireframing</h4>
+          <ul>
+            <li><strong>Party Genie Templates:</strong> Pre-fill common items for quicker setup.</li>
+            <li><strong>Save Template:</strong> Reuse item lists for recurring event types.</li>
+            <li><strong>Must-Have Items:</strong> Highlight priority items in long lists.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-5 gap-0 mt-5 justify-items-center bg-white rounded-2xl p-6 shadow-md">
+        <img src="wire1.png" alt="wireframe 1, event screen guest view" class="w-11/12 h-auto" />
+        <img src="wire2.png" alt="wireframe 2, event screen guest view" class="w-11/12 h-auto" />
+        <img src="wire3.png" alt="wireframe 3, edit event screen" class="w-11/12 h-auto" />
+        <img src="wire4.png" alt="wireframe 4, add items screen" class="w-11/12 h-auto" />
+        <img src="wire5.png" alt="wireframe 5, edit items screen" class="w-11/12 h-auto" />
+      </div>
+    
+    
+      <h4 class="text-2xl pt-12">Design Considerations</h4>
+      <p>The challenge was balancing useful functionality with simplicity. We prioritized ease of use over advanced controls to keep the interface intuitive for student users.
+        We left out a few ideas from the sketches because we thought they might be a little overwhelming and we wanted to prioritize the potluck idea. These include gamification, what each person needs to bring for themselves, and asking other guests for help. 
+      </p>
+    </div>
+
+    <div class="container pt-8">
+      <h2 class="text-2xl">02 Incorporating Wireframing Critique 🗣️</h2>
+      <p>We met with two mentors and incorporated their critique on our wireframes.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
+        <div class="bg-[#252525] rounded-2xl p-12 text-white">
+          <h2 class="text-xl font-semibold mb-2 text-white text-center">Jess Eames</h2>
+          <p class="text-white/80 text-center pb-4">
+            Head of Business & Product Operations at Partiful
+          </p>
+          <ul class="space-y-3">
+            <li>
+              Design features as horizontal capabilities usable across event types
+              (e.g., ride-sharing, fundraiser tasks).
+            </li>
+            <li>
+              Hosts should be able to edit or assign sign-ups, like with RSVPs,
+              since guests often coordinate outside the app.
+            </li>
+            <li>
+              Allow multiple people to claim the same item or task.
+            </li>
+            <li>
+              Let guests see what others have signed up for to encourage
+              coordination and social engagement.
+            </li>
+            <li>
+              Rather than having users input quantities with unclear units (e.g., “4
+              chickens”), allow hosts to define the number of people needed per item
+              or task. Hosts can then optionally include notes for specific
+              instructions.
+            </li>
+          </ul>
+        </div>
+      
+        <div class="bg-[#252525] rounded-2xl p-12 text-white">
+          <h2 class="text-xl font-semibold mb-2 text-white text-center">Caroline Walter</h2>
+          <p class="mt-3 text-white/80 text-center pb-4">
+            Program manager for Portfolio Operations at Google Venture:
+          </p>
+          <ul class="space-y-3">
+            <li>Instead of narrowing down on the UI, step back and think broader.</li>
+            <li>How do students currently organize potlucks?</li>
+            <li>
+              What key pain-point do college students face that isn’t addressed by
+              Partiful today?
+            </li>
+            <li>
+              What’s stopping them from using Partiful today? Is it awareness,
+              usability, or relevance?
+            </li>
+            <li>
+              What made previous apps go viral on campus, and how can we replicate
+              that?
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container pt-8">
+      <h2 class="text-2xl">03 User Research</h2>
+      <p>
+        Other than incorporating the design critiques, we took Caroline's suggestion to take a step back and dig deeper into the student mindset through user research. 
+        I made and sent out flyers for a survey we wrote. The results showed that a lot of students simply haven’t heard of Partiful and don’t know what
+        Partiful offers that other apps don’t. 
+      </p>
+
+      <div class="flex justify-center my-8">
+        <img src="pie.png" class="w-[32rem] h-auto rounded-2xl" alt="Pie chart for whether college students have planned events with/ heard of Partify. 01% said no, 20% said no but are familiar with the app, 19% has planned an event with Partiful " />
+      </div>
+      <p>
+        While we understand that this will mostly require marketing initiatives within the company, we came up with a referral program to reward
+        users who invite friends to incentivize app engagement.
+      </p>
+      </ul>
+    </div>
+
+    <div class="container pt-8">
+      <h2 class="text-2xl"> 04 Hi-Fi Prototype 📱</h2>
+      <p>
+        Feedback from mentors and company founders shaped the final hi-fi
+        prototype. Positive responses highlighted strong features, while
+        constructive suggestions helped refine usability, clarity, and flow. We were able to implement most suggestions (except a seperate screen for RSVPs).
+      </p>
+      <div
+        class="container align-center py-5"
+        style="display: flex; justify-content: center"
+      >
+        <iframe
+          style="border: 1px solid rgba(0, 0, 0, 0.1)"
+          width="800"
+          height="450"
+          alt="figma prototype frame"
+          src="https://embed.figma.com/proto/kmLtbNPC9EyZ8eiumlfhby/Partiful-3-Hi-Fi?node-id=2001-7255&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2001%3A7255&show-proto-sidebar=1&embed-host=share"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <h3 class="text-2xl">User Flows</h3>
+
+      <div class="row d-felx d-flex">
+        <div class="col-md-6 p-3">
+          <h4 class="text-xl">Planner</h4>
+          <ul>
+            <li>
+              Create Custom Lists: Planners can easily create customizable lists
+              for any event, allowing guests to sign up for specific items.
+            </li>
+            <li>
+              Enhanced Templates: The prototype extends Partiful's template
+              feature, supporting item sign-ups tailored to various event types.
+            </li>
+            <li>
+              Manage Guest Contributions: Planners have the ability to edit the
+              item list and commitments. This includes limiting the amount of
+              users that can sign up for each item, and highlighting must-have
+              items.
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 p-3">
+          <h4 class="text-xl">Guest</h4>
+          <ul>
+            <li>
+              Claim Items: Guests can claim responsibility for bringing specific
+              items to an event.
+            </li>
+            <li>
+              Add Custom Items: Guests can add new, custom items to the list,
+              ideal for potluck events.
+            </li>
+            <li>
+              Manage Personal Contributions: Guests have the ability to sign up,
+              edit their item commitments, and view overall contributions
+              clearly.
+            </li>
+            <li>
+              Implemented a flexible, horizontal feature enabling planners to
+              create adaptable lists for any event type.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="container pt-8">
+      <h2 class="text-2xl"> 05 Future Work</h2>
+      <p class="pb-8">
+        Future work would involve thinking through a referral system with greater detail, as we did not have time to focus on it given the demands for the potluck design. 
+        The potluck design may also need changes, such as giving the planner an ability to create multiple custom lists for each type of items (car list, food list, apartment list…) instead of throwing all of the items in one big list.
+      </p>
+
+    </div>
+  </body>
+</html>
