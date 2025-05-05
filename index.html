@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+    $(function(){
+    $("#header").load("header.html"); 
+    });
+    </script> 
+</head>
+<body>
+    <header>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+    </header>
+
+    <div class="flex flex-col md:flex-row pt-12 md:pt-36"> 
+        <div class="w-full md:w-2/3 flex justify-center items-center pb-8 min-h-[6rem]">
+          <div class="max-w-md text-center pt-8 md:pt-0 md:text-left">
+            <h1 id="typedtext" class="text-3xl md:text-5xl leading-snug"></h1>
+          </div>
+        </div>
+    
+        <div class="self-end w-full md:w-1/3 flex flex-col items-center justify-center pr-8">
+            <img src="assets/AdobeStock_523801451 2.png" alt="Profile Image" class="max-w-xs object-contain" />
+            <div class="social-icons items-center justify-center">
+                <a href="https://github.com/shufanhe" target="_blank">
+                    <i class="fab fa-github" alt="GitHub"></i>
+                </a>
+                <a href="https://linkedin.com/in/shufan-he/" target="_blank">
+                    <i class="fab fa-linkedin" alt="LinkedIn"></i>
+                </a>
+                <a href="shufanhe02@gmail.com">
+                    <i class="fas fa-envelope" alt="Gmail"></i>
+                </a>
+            </div>
+        </div>          
+    </div>
+
+     <script>
+        var aText = new Array(
+            "Hi, I'm Shufan", 
+            "I'm a UI Designer passionate about designing user-centric applications"
+        );
+        var iSpeed = 100; // time delay of print out
+        var iIndex = 0; // start printing array at this position
+        var iTextPos = 0; // initialise text position
+        var sContents = ''; // initialise contents variable
+        var iArrLength = aText[0].length; // length of first string
+        var destination = document.getElementById("typedtext");
+        
+        function typewriter(){     
+            var destination = document.getElementById("typedtext");
+            
+            // If we're on the second sentence, add a line break
+            if (iIndex > 0) {
+                sContents = aText[0] + '<br />';
+            } else {
+                sContents = '';
+            }
+
+            // Add the current text being typed
+            destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+            
+            if ( iTextPos++ == iArrLength ) {
+                iTextPos = 0;
+                iIndex++;
+                if ( iIndex != aText.length ) {
+                    iArrLength = aText[iIndex].length;
+                    setTimeout("typewriter()", 500);
+                }
+            } else {
+                setTimeout("typewriter()", iSpeed);
+            }
+        }
+
+        // Start the typewriter effect when the page loads
+        window.onload = typewriter;
+    </script>
+
+
+</body>

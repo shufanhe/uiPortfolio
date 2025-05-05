@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Width Grid Layout</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: grid;
+            grid-template-rows: auto auto;
+        }
+
+        .row-1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two equal columns */
+            align-items: center;
+            padding: 50px;
+        }
+
+        .row-1 img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .row-1 div {
+            padding: 20px;
+        }
+
+        .row-2 {
+            width: 100%;
+        }
+
+        .row-2 img {
+            width: 100%;
+            height: auto;
+            display: block;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- First Row: Left Text, Right Image -->
+    <div class="row-1">
+        <div>
+            <h1>Golf Club Logo Redesign</h1>
+            <p>CrestWicke is a private members-only country club with a challenging golf course and facilities for events.
+                This project focuses on redesigning their logo and prototyping some commercial products.
+            </p>
+        </div>
+        <div>
+            <img src="https://www.crestwicke.com/images/2023/042.jpg" alt="Golf course">
+        </div>
+    </div>
+
+    <!-- Second Row: Full-width Image -->
+    <div class="row-2">
+        <img src="crestwicke.png" alt="Redesigned logo">
+    </div>
+</body>
+</html>

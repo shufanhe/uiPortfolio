@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Website Redesign</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .custom-frame {
+        width: 1194px;
+        height: 602px;
+        background-color: #252525;
+        border-radius: 0 0 20px 20px;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body class="bg-[#efefec] text-black" style="font-family: Helvetica, Arial, sans-serif;">
+    <div class="w-full space-y-12 p-0">
+
+      <!-- Image container styled -->
+      <div class="custom-frame mx-auto flex flex-col md:flex-row items-end justify-center gap-4 p-6 w-[80%]">
+        <img
+          src="image/mac.png"
+          alt="Macbook mockup of website"
+          class="max-h-[500px] object-contain"
+        />
+        <img
+          src="image/iphone.png"
+          alt="iphone mockup of website"
+          class="max-h-[400px] object-contain"
+        />
+      </div>
+      
+      <h1 class="text-4xl font-semibold text-center">Cafe Website Redesign</h1>
+
+      <!-- Role/Team/Timeline/Tools/URL -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 w-[90%] max-w-screen-xl mx-auto">
+        <div>
+          <h2 class="text-xl underline mb-1">ROLE</h2>
+          <p class="text-lg">UI Design, Frontend Dev</p>
+        </div>
+        <div>
+          <h2 class="text-xl underline mb-1">TEAM</h2>
+          <p class="text-lg">Individual</p>
+        </div>
+        <div>
+          <h2 class="text-xl underline mb-1">TIMELINE</h2>
+          <p class="text-lg">1 Week</p>
+        </div>
+        <div>
+          <h2 class="text-xl underline mb-1">TOOLS</h2>
+          <p class="text-lg">Figma, HTML, CSS</p>
+        </div>
+        <div>
+          <h2 class="text-xl underline mb-1">URL</h2>
+          <p class="text-lg">
+            <a href="www.goldendessertri.com" class="underline text-blue-500 hover:text-blue-700" target="_blank">Old Site</a>
+            <a href="https://shufanhe.github.io/Redesign/Pages/home.html" class="underline text-blue-500 hover:text-blue-700" target="_blank">New Site</a>
+          </p>        
+        </div>
+      </div>
+
+      <!-- Problem/Solution -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 w-[90%] max-w-screen-xl mx-auto">
+        <div>
+          <h3 class="text-2xl font-semibold mb-2">PROBLEM</h3>
+          <p>
+            Golden Dessert & Cafe in Providence, RI offers a wide menu of drinks, desserts, and meals, but their outdated website frustrates users with poor layout, responsiveness, and accessibility.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-2">SOLUTION</h3>
+          <p>
+            The redesign targets local customers seeking a smoother, more modern online experience, one that matches what they expect from other cafés and better reflects Golden Dessert & Cafe’s cozy, welcoming vibe.          
+          </p>
+        </div>
+      </div>
+
+
+
+      <div class="bg-[#252525] text-white grid grid-cols-2 gap-12 p-24 w-full">
+        <div>
+            <h1 class="text-5xl font-semibold mb-4">Problems</h1>
+            <p>The main issues of the old webpage can be categorized into the following five aspects:</p>
+        </div>
+        <div>
+          <h2 class="text-2xl text-white/80">1. Efficiency</h2>
+          <p class="mb-4">Most information is laid out without much organization. The page is not responsive, and when viewing on a narrow screen the menu item names and pictures mismatch.</p>
+          <h2 class="text-2xl text-white/80">2. Learnability</h2>
+          <p class="mb-4">It’s unclear which components are clickable without hovering over them.</p>
+          <h2 class="text-2xl text-white/80">3. Memorability</h2>
+          <p class="mb-4">It’s unlikely that users will easily remember the location of each item, as they are scattered throughout the page, with relatively similar sizes. The buttons, heading, and contact information are the same size.</p>
+          <h2 class="text-2xl text-white/80">4. Conceptual Model</h2>
+          <p class="mb-4">Some components are used in unexpected ways. For example, one highlighted text redirects to a pdf, another is not clickable. The dessert and drink pictures are clickable but has no actual functioanlity, and the purpose of the like buttons are unclear since there is no sense of user of user interactions.</p>
+          <h2 class="text-2xl text-white/80">5. Accessibility</h2>
+          <p class="mb-4">Many texts on images incurred contrast errors when examined under WAVE. Some have small fonts which makes them even harder to read.</p>
+        </div>
+      </div>
+
+      <div class="w-[80%] max-w-screen-xl mx-auto">
+        <h2 class="text-3xl text-black/70 mb-8"> 01 Style Guide</h2>
+        <p class="mb-8">To address these issues, I began by developing a visual style guide that emphasized clarity, hierarchy, and accessibility—providing a consistent look and feel across all components. 
+        </p>
+        <img src="image/styleguide.png" alt="design style guide"/>
+      </div>
+
+      <div class="bg-[#252525] text-white p-12">
+        <h2 class="text-2xl text-white/80 max-w-screen-xl mx-auto">Following that, I created a revised page layout to organize content more intuitively and ensure a smoother, more engaging user experience.
+        </h2>
+      </div>
+
+      <div class="w-[80%] max-w-screen-xl mx-auto grid grid-cols-2 ">
+        <h2 class="text-3xl text-black/80 mb-8"> 02 Page Layout</h2>
+        <img src="image/notes.png" alt="page layout and notes"/>
+      </div>
+
+      <div class="bg-[#252525] text-white w-full p-12">
+        <h2 class="text-3xl text-white/80 mb-3">03 Final Product</h2>
+        <p class="mb-8">
+          The new site's responsiveness was tested with different screen sizes, different languages, and different font sizes.
+          The following is a gallery of these responsiveness tests.
+        </p>
+      
+        <!-- Phone Screens -->
+        <div class="max-w-screen-xl mx-auto bg-white rounded-2xl p-4 mb-6">
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 items-end">
+            <img src="image/phone.png" alt="Mobile homepage version 1" class="h-[36rem] object-contain w-full" />
+            <img src="image/phone1.png" alt="Mobile homepage version 2" class="h-[36rem] object-contain w-full" />
+            <img src="image/phone2.png" alt="Mobile homepage version 3" class="h-[36rem] object-contain w-full" />
+            <img src="image/phone3.png" alt="Mobile homepage version 4" class="h-[36rem] object-contain w-full" />
+          </div>
+        </div>
+      
+        <!-- iPad and Laptop Screens -->
+        <div class="max-w-screen-xl mx-auto bg-white rounded-2xl p-4 mb-6">
+          <div class="grid grid-cols-2 sm:grid-cols-2 gap-4 items-end">
+            <img src="image/ipad.png" alt="Tablet layout of the homepage" class="h-[36rem] object-contain w-full" />
+            <img src="image/laptop.png" alt="Laptop layout of the homepage" class="h-[36rem] object-contain w-full" />
+          </div>
+        </div>
+      
+        <!-- Translated Versions -->
+        <div class="max-w-screen-xl mx-auto bg-white rounded-2xl p-4 mb-6">
+          <div class="grid grid-cols-2 sm:grid-cols-2 gap-4 items-end">
+            <img src="image/translated.png" alt="Homepage translated into Spanish" class="h-[36rem] object-contain w-full" />
+            <img src="image/translated2.png" alt="Homepage translated into French" class="h-[36rem] object-contain w-full" />
+          </div>
+        </div>
+      
+        <!-- Text Size Versions -->
+        <div class="max-w-screen-xl mx-auto bg-white rounded-2xl p-4 mb-6">
+          <div class="grid grid-cols-2 sm:grid-cols-2 gap-4 items-end">
+            <img src="image/largetext.png" alt="Homepage with large text for accessibility" class="h-[36rem] object-contain w-full" />
+            <img src="image/smalltext.png" alt="Homepage with small text" class="h-[36rem] object-contain w-full" />
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+  </body>
+</html>
