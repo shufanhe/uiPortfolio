@@ -1,0 +1,214 @@
+@import url('clash-display.css');
+/* Typography */
+.custom-frame {
+    width: 1194px;
+    height: 602px;
+    background-color: #252525;
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+  }
+body {
+    margin: 0;
+    font-family: 'ClashDisplay-Bold', sans-serif;
+    overflow-x: hidden;
+    background-color: #efefec;
+}
+h1 {
+    font-weight: 200;
+    font-size: 40px;
+}
+h2 {
+    font-weight: 200;
+}
+p {
+    font-weight:100;
+}
+.left-texth {
+    text-align: left; 
+    width: 90%; 
+    padding-right: 5%;
+    font-size: 30px;
+}
+.left-textp{
+    text-align: left; /* Align text to the left */
+    width: 90%; 
+    padding-right: 5%;
+    padding-bottom: 40px;
+}
+.larger-text {
+    text-align: left;
+    font-size: 18px;
+    width: 90%; 
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 8%;
+}
+.smaller-text {
+    font-size: 13px;
+}
+
+/* Layout */
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 40px; /* Add space on the left */
+    padding-right: 40px;
+    height: auto;
+}
+.line {
+    width: 90%;
+    border: none;
+    height: 1px; 
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 20px;
+    margin-top: 50px;
+}
+#section1 { display: flex; padding: 40px; min-height: 65vh;}
+.columns {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.column {
+    flex: 1;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+.left { text-align: left; }
+.right { text-align: right; }
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 10px; 
+    max-width: 800px;
+    margin: 0 auto; 
+}
+#section2 { display: flex; flex-direction: column; }
+.screenshots {
+    display: flex;
+    justify-content: center; 
+    align-items: top;
+    text-align: center; 
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.screenshots figure {
+    display: flex;
+    flex-direction: column; /* Stacks label & image */
+    align-items: center; /* Centers both label and image */
+}
+.screenshots img {
+    width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    padding: 20px;
+}
+.screenshots figcaption {
+    font-size: 20px;
+    padding: 1%;
+}
+#section3 { display: flex; flex-direction: column; }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, auto); /* Responsive grid */
+    grid-auto-rows: minmax(50px, auto); /* Ensures rows don't shrink too much */        
+    width: 90%;
+    box-shadow: 4px 4px 10px rgba(0.2, 0, 0, 0.2);
+}
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 10px; /* Reduced padding to prevent overlap */
+    font-size: 15px; /* Reduced font size to fit better */
+    border: 1px solid #ddd; /* Optional: Adds a border for clarity */
+}
+.grid-container > div:nth-child(1), 
+.grid-container > div:nth-child(2),
+.grid-container > div:nth-child(3),
+.grid-container > div:nth-child(4),
+.grid-container > div:nth-child(5),
+.grid-container > div:nth-child(6),
+.grid-container > div:nth-child(15),
+.grid-container > div:nth-child(24) { 
+    background-color: #e8eef4;
+}
+.item1 {
+    grid-row: 2 / span 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.item2 {
+    grid-row: 4 / span 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.item3 {
+    grid-row: 6 / span 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#section4 { display: flex; flex-direction: column; }
+.figma-img {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 80%;
+    height: auto;
+}
+#section5 { }
+#section6 { display: flex; flex-direction: column; }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-top: 20px;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+}
+#section7 { display: flex; flex-direction: column;  align-items: left;}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.header {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+.app-icon {
+    width: 60px; 
+    height: 60px; 
+    margin-top: 10px; 
+}
+.header i {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.header h2 {
+    margin: 10px 0;
+}
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+ul li {
+    margin-bottom: 10px;
+    text-align: left;
+}
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    background-color: #C99393;
+    overflow-x: hidden;
+}

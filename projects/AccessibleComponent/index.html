@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Component</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="custom-frame mx-auto flex flex-col md:flex-row items-end justify-center gap-4 p-6 w-[80%]">
+        <div class="image-grid">
+            <img src="images/GIF1.gif" alt="dropdown GIF1">
+            <img src="images/GIF2.gif" alt="dropdown GIF2">
+            <img src="images/GIF3.gif" alt="dropdown GIF3">
+            <img src="images/GIF.gif" alt="dropdown GIF4">
+        </div>
+      </div>
+      
+      <h1 class="text-4xl font-semibold text-center mb-4 mt-8">Accessbility of Dropdowns</h1>
+
+      <!-- Role/Team/Timeline/Tools/URL -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-[90%] max-w-screen-xl mx-auto">
+        <div>
+          <h2 class="text-xl underline mb-1">ROLE</h2>
+          <p class="text-lg">UI Design, Case Study</p>
+        </div>
+        <div>
+          <h2 class="text-xl underline mb-1">TEAM</h2>
+          <p class="text-lg">Individual</p>
+        </div>
+        <div>
+          <h2 class="text-xl underline mb-1">TIMELINE</h2>
+          <p class="text-lg">2 Weeks</p>
+        </div>
+        <div>
+          <h2 class="text-xl underline mb-1">TOOLS</h2>
+          <p class="text-lg">Figma</p>
+        </div>
+      </div>
+
+      <!-- Problem/Solution -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 w-[90%] max-w-screen-xl mx-auto">
+        <div>
+          <h3 class="text-2xl font-semibold mb-2">PROBLEM</h3>
+          <p>
+            This project examines the accessibility of dropdown components from three applications, leveraging trade-offs between learnability, memorability, efficiency and accessibility. 
+          </p>
+          </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-2">SOLUTION</h3>
+          <p>
+            In the end we will redesign one component to enhance its accessibility and solves for a, as Kat Holmes puts it, "mismatch - moments where human interactions are hindered by an absence of appropriate design solutions
+          </p>
+        </div>
+      </div>
+
+    <div class="section" id="section2">
+        <hr class="line">
+        <h2 class="left-texth mb-3">01 Dropdowns from 3 Applications were Examined</h2>
+        <div class="screenshots">
+            <figure>
+                <figcaption><h2>Figma<img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma Icon" style="width: 25px; height: 25px; vertical-align: middle;"></h2></figcaption>
+                <img src="images/figmascrshot.png" alt="Figma dropdown screenshots">
+            </figure>
+            <figure>
+                <figcaption><h2>Google Doc<img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Google_Docs_2020_Logo.svg" alt="Google Doc Icon" style="width: 25px; height: 25px; vertical-align: middle;"></h2></figcaption>
+                <img src="images/docscrshot.png" alt="Google Doc dropdown screenshots">
+            </figure>
+            <figure>
+                <figcaption><h2>Apple News<img src="images/applenews.png" alt="Apple News Icon" style="width: 25px; height: 25px; vertical-align: middle;"></h2></figcaption>
+                <img src="images/newsscrshot.png" alt="Apple News dropdown screenshots">
+            </figure>
+        </div>
+    </div>
+    <div class="section" id="section3">
+        <hr class="line">
+        <h2 class="left-texth mb-3">
+            02 Accessibility & Usability
+        </h2>
+        <p class="left-textp">Accessibility and usability of the three dropdown components compared in a table</p>
+            <div class="grid-container">
+                <!-- Header Row -->
+                <div class="item">
+                    <!-- Empty cell for row header alignment -->
+                </div>
+                <div class="item">
+                    <!-- Empty cell for row header alignment -->
+                </div>
+                <div class="item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma Icon" class="app-icon">
+                    <h2>Figma</h2>
+                </div>
+                <div class="item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Google_Docs_2020_Logo.svg" alt="Google Docs Icon" class="app-icon">
+                    <h2>Google Docs</h2>
+                </div>
+                <div class="item">
+                    <img src="images/applenews.png" alt="Apple News Icon" class="app-icon">
+                    <h2>Apple News</h2>
+                </div>
+            
+                <!-- Row 1: Mouse Icon -->  
+                <div class="item1">
+                    <i class="fas fa-mouse"></i>
+                    <p>Mouse</p>
+                </div>
+                <div class="item">
+                    <p>Input</p>
+                </div>
+                <div class="item">
+                    <ul>
+                        <strong>Average</strong>
+                        <li><p>Text and arrow function sepeartely, could be confusing for first time users</p></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <ul>
+                        <strong>Good</strong>
+                        <li><p>Can be easily navigated</p></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <ul>
+                        <strong>Good</strong>
+                        <li><p>Good efficiency and smooth interaction as everything is laid out</p></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <p>Output</p>
+                </div>
+                <div class="item">
+                    <ul>
+                        <li><p>Hover: arrow icon darkens</p></li>
+                        <li><p>Press: menu appears</p></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <ul>
+                        <li><p>Hover: “font” cue appears, color darkens</p></li>
+                        <li><p>Press: menus appears</p></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <ul>
+                        <li><p>Hover: dropdown icon appears</p></li>
+                        <li><p>press: menu collapsed</p></li>
+                    </ul>
+                </div>
+    
+            
+                <!-- Row 2: Keyboard Icon -->
+                <div class="item2">
+                    <i class="fas fa-keyboard"></i>
+                    <p>Keyboard</p>
+                </div>
+                <div class="item">
+                    <p>Input</p>
+                </div>
+                <div class="item">
+                    <ul>
+                        <strong>Good</strong>
+                        <li><p>Can press up/down arrow to navigate through items</p></li>                            
+                    </ul>
+                </div>
+                <div class="item">
+                    <ul>
+                        <strong>Average</strong>
+                        <li><p>Can not reach dropdown/ go from collapsed stage to expanded stage. A search button elsewhere for searching font is accessible</p></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <ul>
+                        <strong>Poor</strong>
+                        <li><p>Could not navigate to dropdown with just keyboard</p></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <p>Output</p>
+                </div>
+                <div class="item">
+                    <ul>
+                        <strong>Good</strong>
+                        <li><p>Text and arrow function sepeartely</p></li>
+                        <li><p>Clear instructions announced with voiceover</p></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <ul>
+                        <strong>Good</strong>
+                        <li><p>Options darkens as pressing up/down buttons</p></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <ul>
+                        <strong>Good</strong>
+                        <li><p>Has a dropdown icon unlike the mac version</p></li>
+                        <li><p>Intuitive and good learnability</p></li>
+                    </ul>
+                </div>
+
+            
+                <!-- Row 3: Phone Icon -->
+                <div class="item3">
+                    <i class="fas fa-mobile-alt"></i>
+                    <p>Phone</p>
+                </div>
+                <div class="item">
+                    <p>Input</p>
+                </div>
+                <div class="item">
+                    <ul>
+                        <li>N/A</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <ul>
+                        <strong>Good</strong>
+                        <li>Dropdown turned into navigation buttons</li>
+                        <li>Reasonable for small screens</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <ul>
+                        <strong>Good</strong>
+                        <li>Press and collapse, same logic as mac version</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <p>Output</p>
+                </div>
+                <div class="item">
+                    <ul>
+                        <li>N/A</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <ul>
+                        <strong>Poor</strong>
+                        <li>More difficult to find/ navigate to</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <ul>
+                        <strong>Good</strong>
+                        <li>Arrow changes direction when dropdown is opened/closed</li>
+                    </ul>
+                </div>
+            </div>
+
+    </div>
+    <div class="section" id="section4">
+        <hr class="line">
+        <h2 class="left-texth">
+            03 State Models - Apple News <img src="images/applenews.png" alt="Apple News Icon" style="width: 25px; height: 25px; vertical-align: middle;">
+        </h2>
+        <p class="left-textp">
+            A closer look at the Apple News dropdown via state models and a revision with some intentional trade-offs
+        </p>
+        <img src="images/mouse.png" class="figma-img" alt="State models for mouse users. Original model starts with expanded state, hover to show dropdown icon, click to collapse/expand. New state model for mouse users. Starts with collapsed state and dropdown icon. Hover to focus, click to expand. Tradeoff: More learnable for new users, less efficient for frequent users">
+        <img src="images/keyboard.png" class="figma-img" alt="State models for keyboard users. Original model has no connection between any state. New State model for keyboard users. Added connections between states. Tab to enter/exit focused state, hit enter to expand/collapse, press up/down to navigate dropdown, hit enter to select. No tradeoff.">
+    </div>
+    <div class="section" id="section6">
+        <hr class="line">
+        <h2 class="left-texth">
+            04 Redesign - Apple Newss <img src="images/applenews.png" alt="Apple News Icon" style="width: 25px; height: 25px; vertical-align: middle;">
+        </h2>
+        <p class="left-textp">
+            Redesigning the Apple News Dropdown Component to make it more accessible to more users
+        </p>
+        <div class="grid">
+            <div class="col">
+                <p>Initial State:</p>
+                <ul>
+                    <li><p>Still start with expanded state for efficiency</p></li>
+                    <li><p>Increased contrast between text and backgroud to increase accessibility</p></li>
+                    <li><p>Add arrow to indicate it's a dropdown and improve learnability</p></li>
+                </ul>
+            </div>
+            <img src="images/redesign1.png" alt="png">
+            <img src="images/redesign2.png" alt="png">
+            <div class="col">
+                <p>Collapsed State:</p>
+                <ul>
+                    <li><p>If users don't want to see the list they can collapse it</p></li>
+                    <li><p>Arrow still present after mouse leaves, improves memorability</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section7">
+        <hr class="line">
+        <h2 class="left-texth mb-3">
+            Summary
+        </h2>
+        <p class="larger-text">
+            Overall the components we examined did well in the ease of use for frequent users and mouse users, as well as high contrast between text and background.
+            But keyboard users were generally less prioritized. Figma had a reasonable focus order with clear voiceover instructions, 
+            Google Doc's was hidden in a search button, and Apple News did not provide a good way to access/ use the dropdown.
+            <br>
+            <br>
+            In our redesign we tried to solve some mismatches considering these groups of users.
+            Including those who can only use the keyboard, who are not familiar with web design and the concept of a dropdown,
+            and people who have lower vision / hard time distinguishing colors.
+        </p>
+    </div>
+    <footer>
+        <p>Credits: Dropdown gif by <a href="https://dribbble.com/shots/6455498-Setting-Dropdown-Animation">Aryan Shirani, </a> 
+            <a href="https://www.pinterest.com/pin/state-dropdown-animation--197173289912123671/">Ricardo Magalhães, </a>
+            <a href="https://www.pinterest.com/pin/dropdown-menu-animation--346073552607591125/">Felippe Silveira,</a>
+                and 
+            <a href="https://www.pinterest.com/pin/dropdown-dailyui-027-by-nikhil-varghese--701294973255891425/">Nikhil Varghese</a>
+        </p>
+    </footer>
+</body>
+</html>
